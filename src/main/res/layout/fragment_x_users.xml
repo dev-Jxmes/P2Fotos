@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/fragment_users"
+    android:background="@color/red_3"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTILIZADORES"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/app_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_header"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/find_users_btn"
+            android:text="PROCURAR UTILIZADORES"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/add_users_btn"
+            android:text="ADICIONAR UTILIZADORES"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/list_users_btn"
+            android:text="LISTAR UTILIZADORES (TO REMOVE)"
+            />
+    </LinearLayout>
+</RelativeLayout>

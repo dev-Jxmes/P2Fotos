@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/red_3"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN-IN"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:id="@+id/log_in_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_in_header"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textNoSuggestions"
+
+            android:id="@+id/login_user_input"
+            android:hint="Username Or Email"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:inputType="numberPassword"
+
+            android:id="@+id/login_password_input"
+            android:hint="Password"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/login_btn"
+            android:text="ENTRAR"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/login_go_back_btn"
+            android:text="VOLTAR"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/login_create_btn"
+            android:text="CRIAR CONTA"
+            />
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="64dp"
+            android:id="@+id/login_load_bar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@color/red_3"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRIAR ALBUM"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:id="@+id/sign_up_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up_header"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textNoSuggestions"
+
+            android:id="@+id/album_name_input"
+            android:hint="Nome Do Album"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/create_album_btn"
+            android:text="Criar"
+            />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/View"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_2"
+            android:textColor="@color/white"
+
+            android:id="@+id/go_back_btn"
+            android:text="VOLTAR"
+            />
+
+
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="64dp"
+            android:id="@+id/load_bar_c"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

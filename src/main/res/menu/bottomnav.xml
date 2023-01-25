@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Albums"
+        android:id="@+id/nav_album_btn"
+        android:icon="@drawable/x_album_icon"
+        />
+
+    <item
+        android:title="Users"
+        android:id="@+id/nav_user_btn"
+        android:icon="@drawable/x_user_icon"
+        />
+
+    <item
+        android:title="Settings"
+        android:id="@+id/nav_settings_btn"
+        android:icon="@drawable/x_settings_icon"
+        />
+</menu>
